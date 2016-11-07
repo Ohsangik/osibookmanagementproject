@@ -368,8 +368,10 @@ public class BookDAO {
 		
 		try {
 			
+			
 			String sql = "insert into book (bisbn, btitle,bprice,bauthor,btranslator, bpublisher,bimgbase64) values ( ?,?,?,?,?,?,? )"; 
 
+			
 			pstmt = con.prepareStatement(sql);
 			pstmt.setString(1, isbn);
 			pstmt.setString(2, booktitle);
